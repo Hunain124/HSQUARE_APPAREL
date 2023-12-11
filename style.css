@@ -106,3 +106,36 @@ nav>.left{
     background-color: black;
     color: #F1C40F;
 }
+
+.shipping{
+    width: 100%;
+    height: 20rem;
+    background-color: black;
+    display: flex;
+    gap: 2.5rem;
+    margin-bottom: 10rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.shipping>.sh{ 
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    height: 65%;
+    background-color: #ebd48759;
+    border-radius: .5rem;
+    color:#ffcc00;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.up{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.up>p{
+    font-size: 3rem;
+    font-weight: 2rem;
+}
