@@ -7,6 +7,7 @@
 html{
     font-size: 62.5%;
 }
+/* nav */
 ul{
     list-style: none;
 }
@@ -54,6 +55,7 @@ nav>.left{
     align-items: center;
     
 }
+/* main */
 .main{
     width: 100%;
     height: 120vh;
@@ -94,7 +96,7 @@ nav>.left{
     color:#F1C40F; 
 
 }
-.main-right>button{
+button{
     width: 10rem;
     height: 5rem;
     border: none;
@@ -102,11 +104,11 @@ nav>.left{
     border-radius: 20rem;
     border-style: groove;
 }
-.main-right>button:hover{
+button:hover{
     background-color: black;
     color: #F1C40F;
 }
-
+/* shipping */
 .shipping{
     width: 100%;
     height: 20rem;
@@ -139,6 +141,7 @@ nav>.left{
     font-size: 3rem;
     font-weight: 2rem;
 }
+/* selling product */
 .sps{
     width: 100%;
     min-height: 75rem;
@@ -166,21 +169,96 @@ nav>.left{
     justify-content: center;
     gap: 2rem;
 }
+/* fresh product */
 .fresh{
     width: 100%;
     height: 100vh;
     background-color: #ffcc00;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
 }
 .fresh>img{
     position: absolute;
     top: -18rem;
     height: 25rem;
-    z-index: -1;
+    z-index: -2;
     left: 41%;
 }
-.fresh>center>h2{
+
+.fh{
+    width: 40rem;
+    height: 40rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background-color: white;
+    font-size: 2rem;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 10px rgba(240, 233, 205, 0.596);
+
+}
+.fh>img{
+    position: absolute;
+    left: 8rem;
+    bottom: -1rem;
+    width: 25rem;
+    z-index: -1;
+    
+}
+.fh>h2{
+    margin-left: 3rem;
+}
+
+/* offer */
+.offer{
+    width: 100%;
+    height: 30vh;
+    background-color: black;
+}
+.off{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7rem;
+}
+.off>p{
+    color: #ffcc00;
     font-size: 4rem;
-    
-    
+
+}
+/* trending product */
+.tps{
+    width: 100%;
+    min-height: 75rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+.tps>h2{
+    font-size: 4rem;
+}
+.tp{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 22vw;
+}
+.tp>img{
+    width: 100%;
+}
+.tp-handle{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
 }
