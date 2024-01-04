@@ -7,9 +7,19 @@
 
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 /* nav */
+.bar {
+    visibility: hidden;
+    position: absolute;
+}
+
 ul {
     list-style: none;
 }
@@ -69,7 +79,7 @@ nav>.left {
 /* main */
 .main {
     width: 100%;
-    height: 120vh;
+    min-height: 70rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,8 +149,8 @@ button:hover {
 .shipping>.sh {
     display: flex;
     flex-direction: column;
-    width: 30rem;
-    height: 65%;
+    width: 32rem;
+    height: 17rem;
     background-color: #ebd48759;
     border-radius: .5rem;
     color: #ffcc00;
@@ -197,7 +207,7 @@ button:hover {
 /* fresh product */
 .fresh {
     width: 100%;
-    height: 100vh;
+    height: 70rem;
     background-color: #ffcc00;
     position: relative;
     display: flex;
@@ -212,6 +222,7 @@ button:hover {
     height: 25rem;
     z-index: -2;
     left: 41%;
+    width: 20%;
 }
 
 .fh {
@@ -247,7 +258,7 @@ button:hover {
 /* offer */
 .offer {
     width: 100%;
-    height: 30vh;
+    height: 20rem;
     background-color: black;
 }
 
@@ -301,7 +312,7 @@ button:hover {
 /* customer review */
 .crs {
     width: 100%;
-    height: 60vh;
+    height: 40rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -339,7 +350,7 @@ button:hover {
 }
 
 .cr2 {
-    width: 30vw;
+    width: 40rem;
     height: 40rem;
     color: #F1C40F;
     overflow: hidden;
@@ -389,7 +400,8 @@ button:hover {
 
 /* footer */
 .footer {
-    height: 100vh;
+    min-width: ;
+    height: 65rem;
     display: flex;
     background-color: rgba(0, 0, 0, 0.774);
     color: white;
@@ -438,9 +450,11 @@ button:hover {
 }
 
 .rights {
+    height: 10rem;
     background-color: rgba(0, 0, 0, 0.774);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-size: 1.5rem;
     color: #ffcc00;
 
@@ -455,4 +469,293 @@ hr {
     display: flex;
     font-size: 2rem;
     justify-content: space-evenly;
+}
+
+@media (max-width:1024px) {
+    .shipping {
+        flex-wrap: wrap;
+        height: 30rem;
+        padding: 10px 0px;
+    }
+
+    .shipping>.sh {
+        width: 47%;
+        height: 11rem;
+    }
+
+    .fresh {
+        flex-wrap: wrap;
+        height: 75rem;
+        padding: 10px 0px;
+
+    }
+
+    .fh {
+        width: 100rem;
+        height: 22rem;
+
+    }
+
+    .fh>button {
+        height: 40rem;
+        width: 10rem;
+    }
+
+    .fh>img {
+        position: absolute;
+        left: 70rem;
+        bottom: -1rem;
+        width: 25rem;
+        z-index: -1;
+
+    }
+
+    .footer {
+        height: 65rem;
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.774);
+        color: white;
+        gap: 1rem;
+
+    }
+
+    .ft>.download {
+        width: 30rem;
+        height: 45rem;
+        padding: 5px -5px;
+    }
+
+    .cr2 {
+        width: 40%;
+
+    }
+
+    .logos {
+        padding-left: 4rem;
+    }
+
+}
+
+@media (max-width:944px) {
+    html {
+        font-size: 45%;
+    }
+}
+
+@media (max-width:768px) {
+    html {
+        font-size: 40%;
+    }
+
+    .sps {
+        padding: 5rem 0px;
+    }
+
+    .sp-handle {
+        flex-wrap: wrap;
+
+    }
+
+    .sp {
+        width: 40rem;
+    }
+
+    .fresh {
+        flex-wrap: wrap;
+        height: 80rem;
+        padding: 10px 0px;
+
+    }
+
+    .fh {
+        width: 100rem;
+        height: 22rem;
+
+    }
+
+    .fh>button {
+        height: 40rem;
+        width: 10rem;
+    }
+
+    .fh>img {
+        position: absolute;
+        left: 50rem;
+        bottom: -1rem;
+        width: 25rem;
+        z-index: -1;
+
+    }
+
+    .tps {
+        padding: 5rem 0px;
+    }
+
+    .tp-handle {
+        flex-wrap: wrap;
+
+    }
+
+    .tp {
+        width: 40rem;
+    }
+
+    .cr2 {
+        width: 37rem;
+    }
+
+    .logos>img {
+
+        width: 10rem;
+    }
+
+    .logos>h2 {
+        font-size: 2.5rem;
+    }
+
+    button {
+        width: 15rem;
+    }
+
+    .rights>h2 {
+        width: 42rem;
+        padding-left: 2rem
+    }
+
+    .social {
+        width: 40rem;
+    }
+
+    .bar {
+        background-color: #ffcc00;
+        visibility: visible;
+        position: absolute;
+        font-size: 5rem;
+        right: 2rem;
+        top: 2rem;
+        padding: 2rem;
+    }
+
+    .left>ul {
+        display: none;
+    }
+
+    .right {
+        display: none;
+    }
+}
+
+@media (max-width:425px) {
+    html {
+        font-size: 40%;
+    }
+
+    .main {
+        flex-wrap: wrap-reverse;
+    }
+
+    .shipping {
+        height: 40%;
+    }
+
+    .shipping>.sh {
+        width: 80%;
+        height: 35%;
+    }
+
+    .crs {
+        height: 90%;
+    }
+
+    .cr1 {
+        height: 25rem;
+        width: 30rem;
+        gap: 2rem;
+    }
+
+    .cr-handle {
+        width: 50rem;
+        flex-wrap: wrap;
+    }
+
+    .logos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logos>h2 {
+        font-size: 3rem;
+    }
+
+    .logos>img {
+        width: 20rem;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        height: 90%;
+    }
+
+    .ft {
+        height: 50rem;
+    }
+
+    button {
+        width: 20rem;
+    }
+
+    .fresh {
+        height: 90rem;
+    }
+
+    .fh>img {
+        position: absolute;
+        left: 40rem;
+        bottom: -1rem;
+        width: 25rem;
+        z-index: -1;
+    }
+
+    .fresh>img {
+        display: none;
+    }
+
+}
+
+@media (max-width:375px) {
+    .rights>h2 {
+        font-size: 2rem;
+    }
+
+    .fh {
+        height: 28rem;
+    }
+
+    .fh>img {
+        position: absolute;
+        left: 35rem;
+        bottom: -1rem;
+        width: 25rem;
+        z-index: -1;
+    }
+
+    .fresh>img {
+        display: none;
+    }
+
+    .offer {
+        height: 30rem;
+    }
+
+    .off>button {
+        width: 25rem;
+    }
+
+}
+
+@media (max-width:320px) {
+    .rights>h2 {
+        font-size: 1.5rem;
+    }
+
 }
